@@ -1,3 +1,6 @@
+'use client';
+
+import { Input }  from "../../components/atoms/Input";
 import  PrimaryBtn  from "../../components/atoms/PrimaryBtn";
 
 export default function LoginPage() {
@@ -8,18 +11,10 @@ export default function LoginPage() {
           ログイン
         </h1>
         <div className="w-[80%]">
-          <input
-            type="text"
-            className="w-full border-4 border-solid border-lime-800 rounded-md p-2"
-            placeholder="email"
-          />
+            <Input type="text" placeholder="メールアドレス"/>
         </div>
         <div className="w-[80%]">
-          <input
-            type="password"
-            className="w-full border-4 border-solid border-lime-800 rounded-md p-2"
-            placeholder="password"
-          />
+            <Input type="text" placeholder="パスワード"/>
         </div>
         <PrimaryBtn>ログイン</PrimaryBtn>
       </form>
