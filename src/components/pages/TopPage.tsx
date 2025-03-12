@@ -1,7 +1,7 @@
 export default function TopPage() {
     return (
-        <div>
-            <header>
+        <div className="relative">
+            <header className="leading-[50px] fixed top-0 right-0 left-0">
                 <div className="container mx-auto flex justify-between p-4">
                     <p className="logo">スケジュール管理</p>
                     <nav>
