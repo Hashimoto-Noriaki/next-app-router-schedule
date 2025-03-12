@@ -13,7 +13,7 @@ export default function NotLoginLayout({ children }: PropsType) {
                 <nav>
                     <ul className="flex gap-5 text-lime-800">
                         <li>利用説明</li>
-                        <li>ログイン</li>
+                        <li><a href="/login">ログイン</a></li>
                     </ul>
                 </nav>
             </div>
