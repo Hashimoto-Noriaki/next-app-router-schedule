@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import Link from 'next/link'
 
 type PropsType = {
     children:ReactNode;
@@ -9,7 +10,11 @@ export default function NotLoginLayout({ children }: PropsType) {
         <div className="relative">
         <header className="bg-white leading-[50px] fixed top-0 left-0 right-0">
             <div className= "container mx-auto flex justify-between">
-                <p className="logo">スケジュール管理</p>
+                <p className="logo">
+                    <Link href="/">
+                        スケジュール管理
+                    </Link>
+                    </p>
                 <nav>
                     <ul className="flex gap-5 text-lime-800">
                         <li>利用説明</li>

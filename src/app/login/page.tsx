@@ -18,7 +18,7 @@ export default function LoginPage() {
             <div className="w-[80%]">
                 <Input type="text" placeholder="パスワード"/>
             </div>
-            <PrimaryBtn>ログイン</PrimaryBtn>
+            <PrimaryBtn onClick={()=> null}>ログイン</PrimaryBtn>
             </form>
         </div>
     </NotLoginLayout>
