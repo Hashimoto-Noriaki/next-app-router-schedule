@@ -24,16 +24,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.logo {
-  color: #ffffff;
-  text-shadow: 
-    1px 1px 1px #3f6212,
-    -1px 1px 1px #3f6212,
-    1px -1px 1px #3f6212,
-    -1px -1px 1px #3f6212,
-    1px 0px 1px #3f6212,
-    0px 1px 1px #3f6212,
-    -1px 0px 1px #3f6212,
-    0px -1px 1px #3f6212;
-}
