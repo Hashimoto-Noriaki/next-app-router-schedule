@@ -1,3 +1,5 @@
+'use client'
+
 import NotLoginLayout from '../../components/templates/NotLoginLayout'
 import PrimaryBtn from '../../components/atoms/PrimaryBtn'
 import { Input } from '../../components/atoms/Input'
