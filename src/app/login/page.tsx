@@ -1,28 +1,26 @@
+'use client';
+
+import { Input }  from "../../components/atoms/Input";
 import  PrimaryBtn  from "../../components/atoms/PrimaryBtn";
+import NotLoginLayout from "../../components/templates/NotLoginLayout"
 
 export default function LoginPage() {
   return (
-    <div className="w-[500px] bg-white rounded-lg shadow-lg py-10">
-      <form className="flex flex-col justify-center items-center gap-10">
-        <h1 className="text-3xl text-lime-800 font-bold text-center">
-          ログイン
-        </h1>
-        <div className="w-[80%]">
-          <input
-            type="text"
-            className="w-full border-4 border-solid border-lime-800 rounded-md p-2"
-            placeholder="email"
-          />
+    <NotLoginLayout>
+        <div className="w-[500px] bg-white rounded-lg shadow-lg py-10">
+            <form className="flex flex-col justify-center items-center gap-10">
+            <h1 className="text-3xl text-lime-800 font-bold text-center">
+                ログイン
+            </h1>
+            <div className="w-[80%]">
+                <Input type="text" placeholder="メールアドレス"/>
+            </div>
+            <div className="w-[80%]">
+                <Input type="text" placeholder="パスワード"/>
+            </div>
+            <PrimaryBtn onClick={()=> null}>ログイン</PrimaryBtn>
+            </form>
         </div>
-        <div className="w-[80%]">
-          <input
-            type="password"
-            className="w-full border-4 border-solid border-lime-800 rounded-md p-2"
-            placeholder="password"
-          />
-        </div>
-        <PrimaryBtn>ログイン</PrimaryBtn>
-      </form>
-    </div>
+    </NotLoginLayout>
   );
 }

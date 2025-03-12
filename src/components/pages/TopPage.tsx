@@ -1,7 +1,11 @@
+'use client'
+
+import { useRouter } from 'next/navigation';
 import  NotLoginLayout  from "../templates/NotLoginLayout"
 import  PrimaryBtn  from "../atoms/PrimaryBtn"
 
 export default function TopPage(){
+    const router = useRouter()
     return (
         <NotLoginLayout>
             <div className="text-center">
@@ -10,7 +14,7 @@ export default function TopPage(){
                     スケジュールを管理します。
                 </p>
                 <div className="pt-[20vh]">
-                    <PrimaryBtn>ログイン</PrimaryBtn>
+                    <PrimaryBtn onClick={() => router.push("/login")}>ログイン</PrimaryBtn>
                 </div>
             </div>
         </NotLoginLayout>
