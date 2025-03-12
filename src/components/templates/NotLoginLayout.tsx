@@ -18,7 +18,7 @@ export default function NotLoginLayout({ children }: PropsType) {
                 </nav>
             </div>
         </header>
-        <main className="pt-[50px] h-screen bg-gradient-to-r from-lime-100 to-lime-200 flex flex-col justify-center items-center">
+        <main>
             {children}
         </main>
     </div>
